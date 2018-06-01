@@ -1,0 +1,19 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script type='text/javascript' src='/socket.io/socket.io.js'></script>
+    <script src="main.js"> </script>
+  </head>
+
+  <body  class="center">
+    <h1 id="main-header" >Simple Chat!</h1>
+    <div id="messages"></div>
+      <div class="message-input">
+        <textarea rows="3" cols="65" type="text" id="input-txt-msg-area" placeholder="Enter a message" value="" ></textarea>
+        <input class=sendMessageButton onclick="return sendMsg(this)" type="submit" name="name" value="Send">
+        <textarea rows="20" cols="65" type="text" id="txt-msg-area"  value="" ></textarea>
+      </div>
+  </body>
+</html>
